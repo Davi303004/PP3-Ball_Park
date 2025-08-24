@@ -1,0 +1,68 @@
+*{
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Baloo 2", sans-serif;
+    color: #f27f2c;
+}
+.controles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-color: #5baad7;
+    border: 2px solid #5b5dd7;
+    border-radius: 5px;
+}
+.controle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #90c3c9;
+    border: 2px solid #a3e0c7;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+button{
+    cursor: pointer;
+    background-color: #5f9ea0;
+    border: 2px solid #1d458a;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+button:hover{
+    background-color: #457274;
+    color: #ebb78c;
+}
+input[type='number']{
+    border: 2px solid #1d458a;
+    padding: 5px;
+    text-align: center;
+    background-color: #c3f2f4;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.park{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    min-height: fill-available;
+    background-color: #65bd63;
+    border: 2px solid #333;
+    position: absolute;
+    overflow: hidden;
+
+}
+.bola{
+    position: absolute;
+    border-radius: 100px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+<body>
+    <div id="controles" class="controles">
+        <div class="controle">
+            <label>Quantidade Atual de Bolinhas</label>
+            <p id="num_bol">0</p>
+        </div>
+        <div class="controle">
+            <label>Quantidade de Bolinhas</label>
+            <input type="number" value="0" min="0" id="txt_qtd">
+            <button id="btn_add">Adicionar</button>
+        </div>
+        <div class="controle">
+            <button id="btn_rmv">Remover Todas as Bolinahs</button>
+        </div>
+    </div>
+    <div id="park" class="park"></div>
+    <script src="index.js"></script>
+</body>
+</html>
