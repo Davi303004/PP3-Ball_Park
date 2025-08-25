@@ -10,21 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
 <body>
+    <div class="container">
+        <img src="images/Ball_Park_Tittle.png" alt="Título do Site" class="titulo">
+    </div>
     <div id="controles" class="controles">
         <div class="controle">
             <label>Quantidade Atual de Bolinhas</label>
-            <p id="num_bol">0</p>
+            <div class="visor">
+                <p id="num_bol">0</p>
+            </div>
         </div>
         <div class="controle">
             <label>Quantidade de Bolinhas</label>
-            <input type="number" value="0" min="0" id="txt_qtd">
+            <input type="number" value="0" min="0" id="txt_qtd" class="visor">
             <button id="btn_add">Adicionar</button>
         </div>
         <div class="controle">
             <button id="btn_rmv">Remover Todas as Bolinahs</button>
         </div>
     </div>
-    <div id="park" class="park"></div>
+    <div class="content">
+        <div id="park" class="park"></div>
+        <div class="modos">
+            <h1>Outros Modos</h1>
+            <div>
+                <p>Modo Batalha</p>
+                <button id="btn_batalha">Selecionar</button>
+            </div>
+            <div>
+                <p>Modo Escape das Bolinhas</p>
+                <button id="btn_escape">Selecionar</button>
+            </div>
+            <div>
+                <p>Modo Proteja a Bolinha</p>
+                <button id="btn_prot">Selecionar</button>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
