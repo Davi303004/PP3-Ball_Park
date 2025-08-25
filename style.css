@@ -8,6 +8,21 @@
     font-family: "Baloo 2", sans-serif;
     color: #f27f2c;
 }
+body{
+    background-color: #a7eae3;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    width: 480px;
+    height: 200px;
+    border-bottom: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 .controles{
     display: flex;
     justify-content: flex-start;
@@ -29,6 +44,16 @@
     margin: 5px;
     border-radius: 5px;
 }
+.visor{
+    background-color: #a9e97b;
+    border: 2px solid #2cc283;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 button{
     cursor: pointer;
     background-color: #5f9ea0;
@@ -42,24 +67,47 @@ button:hover{
     background-color: #457274;
     color: #ebb78c;
 }
-input[type='number']{
-    border: 2px solid #1d458a;
-    padding: 5px;
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.modos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     text-align: center;
-    background-color: #c3f2f4;
+    width: content;
+    height: 80%;
+    background-color: #b0c1e6;
+    border: 2px solid #43aa96;
+    margin: 3%;
+
+}
+.modos h1{
+    margin: 5px;
+    background-color: #9be8c9;
+    border: 2px solid #52bdd8;
     border-radius: 5px;
-    margin-bottom: 5px;
-    width: 150px;
+}
+.modos div{
+    margin: 2px;
+    background-color: #69cadd;
+    border: 2px solid #2854b1;
+    border-radius: 5px;
 }
 .park{
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
+    margin-top: 10px;
+    width: clamp(40%, 80%, 80%);
+    height: 80%;
+    min-height: 62vh;
     min-height: fill-available;
     background-color: #65bd63;
-    border: 2px solid #333;
+    border: 2px solid #24958a;
     position: absolute;
     overflow: hidden;
+    left: clamp(217px, 20vw, 375px);
 }
 .bola{
     position: absolute;
