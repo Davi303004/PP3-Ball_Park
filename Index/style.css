@@ -1,0 +1,117 @@
+*{
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Baloo 2", sans-serif;
+    color: rgb(20,40,70);
+}
+body{
+    background-color: #3e4861;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    width: 50vh;
+    height:30vh;
+    border-bottom: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.controles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-color: #5baad7;
+    border: 2px solid rgb(60,90,110);
+    border-radius: 5px;
+}
+.controle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #90c3c9;
+    border: 2px solid #a3e0c7;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.visor{
+    background-color: #a9e97b;
+    border: 2px solid #2cc283;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    background-color: #5f9ea0;
+    border: 2px solid #1d458a;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+button:hover{
+    background-color: #457274;
+    color: rgb(20 214 198);
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 67vh;
+}   
+.modos{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: stretch;
+    text-align: center;
+    width: content;
+    height: 80%;
+    background-color: #5baad7;
+    border: 2px solid rgb(60,90,110);
+    margin: 3%;
+    padding: 10px;
+
+}
+.modos h1{
+    margin: 5px;
+    background-color: #90c3c9;
+    border: 2px solid #a3e0c7;
+    border-radius: 5px;
+}
+.modos div{
+    margin: 2px;
+    background-color: #90c3c9;
+    border: 2px solid #a3e0c7;
+    border-radius: 5px;
+}
+.park{
+    margin-top: 10px;
+    width: clamp(40%, 80%, 80%);
+    height: 59%;
+    min-height: 62vh;
+    min-height: fill-available;
+    background-color: rgb(101,189,99);
+    border: 2px solid #24958a;
+    position: absolute;
+    overflow: hidden;
+    left: clamp(217px, 19vw, 370px);
+}
+.bola{
+    position: absolute;
+    border-radius: 100px;
+}

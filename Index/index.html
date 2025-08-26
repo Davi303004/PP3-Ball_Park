@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+<body>
+    <div class="container">
+        <img src="../images/Ball_Park_Tittle.png" alt="Título do Site" class="titulo">
+    </div>
+    <div id="controles" class="controles">
+        <div class="controle">
+            <label>Quantidade Atual de Bolinhas</label>
+            <div class="visor">
+                <p id="num_bol">0</p>
+            </div>
+        </div>
+        <div class="controle">
+            <label>Quantidade de Bolinhas</label>
+            <input type="number" value="0" min="0" id="txt_qtd" class="visor">
+            <button id="btn_add">Adicionar</button>
+        </div>
+        <div class="controle">
+            <button id="btn_rmv">Remover Todas as Bolinahs</button>
+        </div>
+    </div>
+    <div class="content">
+        <main>
+            <div id="park" class="park"></div>
+        </main>
+        <aside class="modos">
+            <h1>Outros Modos</h1>
+            <div>
+                <p>Modo Batalha</p>
+                <button id="btn_batalha">Selecionar</button>
+            </div>
+            <div>
+                <p>Modo Escape das Bolinhas</p>
+                <button id="btn_escape">Selecionar</button>
+            </div>
+            <div>
+                <p>Modo Proteja a Bolinha</p>
+                <button id="btn_prot">Selecionar</button>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
