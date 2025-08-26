@@ -9,7 +9,7 @@
     color: #f27f2c;
 }
 body{
-    background-color: #a7eae3;
+    background-color: #3e4861;
 }
 .container{
     display: flex;
@@ -71,16 +71,17 @@ button:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-}
+    height: 67vh;
+}   
 .modos{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:space-evenly;
     align-items: stretch;
     text-align: center;
     width: content;
     height: 80%;
-    background-color: #b0c1e6;
+    background-color: #5fbad3;
     border: 2px solid #43aa96;
     margin: 3%;
 
@@ -93,21 +94,21 @@ button:hover{
 }
 .modos div{
     margin: 2px;
-    background-color: #69cadd;
+    background-color: #74bea8;
     border: 2px solid #2854b1;
     border-radius: 5px;
 }
 .park{
     margin-top: 10px;
     width: clamp(40%, 80%, 80%);
-    height: 80%;
+    height: 59%;
     min-height: 62vh;
     min-height: fill-available;
     background-color: #65bd63;
     border: 2px solid #24958a;
     position: absolute;
     overflow: hidden;
-    left: clamp(217px, 20vw, 375px);
+    left: clamp(217px, 19vw, 370px);
 }
 .bola{
     position: absolute;
