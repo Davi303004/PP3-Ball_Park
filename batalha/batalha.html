@@ -11,8 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
         <img src="../images/Ball_Battle_Tittle.png" alt="Título do Site" class="titulo">
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+           <label>Apostas Certas</label>
+           <p id="score">0</p> 
+        </div>
+        <div class="menu-item">
+            <label>Adicionar Bolinha</label>
+            <button id="btn_add_ball">Adicionar</button>
+        </div>
+        <div class="menu-item">
+            <label>Adicionar Obstáculo</label>
+            <button id="btn_add_barrier">Adicionar</button>
+        </div>
+        <div class="menu-item">
+            <label>Fazer Aposta</label>
+            <div id="div-aposta"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="arena"></div>
     </div>
 </body>
 </html>
