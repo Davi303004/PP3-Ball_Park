@@ -10,9 +10,13 @@ body{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.visor{
+    background-color: #e1a98f;
+    border: 2px solid #e7786c;
+}
 
 .arena{
-    background-color: #bbedee;
+    background-color: #cdebe6;
     border: 2px solid #0d4367;
     width: 70%;
     height: 59vh;
@@ -63,7 +67,7 @@ body{
     display:flex; 
     justify-content:space-between; 
 }
-.modal-title { 
+.modal-tittle { 
     font-size: 1.125rem; 
     font-weight:700; 
 }
@@ -72,7 +76,10 @@ body{
     border: none; 
     font-size: 20px; 
     cursor: pointer; 
+    width: 42px;
+    border-radius: 100px;
 }
+
 .modal form{
     display: flex;
     flex-direction: column;
@@ -81,9 +88,53 @@ body{
 .modal label{
     font-size: .9rem;
 }
-.modal input, textarea{
+.modal input[type='text']{
+    color: #0d4367;
     padding: 10px;
     border-radius: 8px;
     background-color: #dceaf3;
-    border: 1px solid #4b96c4;
+    border: 2px solid #4b96c4;
+}
+.modal input[type='color']{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 3px;
+
+}
+.form-radio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.form-actions{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+}
+.preview-ball{
+    position: absolute;
+    right: 0px;
+    bottom: 90px;
+    padding: 20px;
+    background-color: #dceaf3;
+    border: 2px solid #86c1d3;
+    margin: 10px;
+    width: 55%;
+    height: 30%;
+
+}
+.preview-obs{
+    position: absolute;
+    right: 0px;
+    bottom: 90px;
+    padding: 20px;
+    background-color: #dceaf3;
+    border: 2px solid #86c1d3;
+    margin: 10px;
+    width: 65%;
+    height: 23%;
+
 }

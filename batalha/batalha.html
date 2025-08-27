@@ -42,9 +42,20 @@
                 <div id="ball_tittle" class="modal-tittle">Criando sua Bolinha</div>
                 <button id="b_close_btn" class="close-btn">&times;</button>
             </div>
-
             <form id="ball_form">
-                <!-- Formulário de Criar a Bolinha será inserido aqui -->
+                <label for="ball_nome">Escolha um Nome para sua Bolinha:</label>
+                <input type="text" id="ball_nome" name="ball_nome" size="99" required>
+                <label for="ball_color">Escolha uma Cor para sua Bolinha:</label>
+                <input type="color" id="ball_color" name="ball_color" value="#7dc8f3">
+                <label for="arma">Escolha uma Arma para a Bolinha: </label>
+                <div id="armas" class="form-radio">
+                    <label for="adaga">Adaga:</label><input type="radio" id="adaga" name="arma" value="adaga">
+                    <label for="espada">Espada:</label><input type="radio" id="espada" name="arma" value="espada">
+                    <label for="escudo">Escudo:</label><input type="radio" id="escudo" name="arma" value="escudo">
+                    <label for="lanca">Lança:</label><input type="radio" id="lanca" name="arma" value="lanca">
+                    <label for="foice">Foice:</label><input type="radio" id="foice" name="arma" value="foice">
+                </div>
+                <div class="preview-ball"></div>
                 <div class="form-actions">
                     <button type="button" id="b_cancel_btn">Cancelar</button>
                     <button type="submit" id="b_add_btn">Adicionar Bolinha</button>
@@ -60,7 +71,20 @@
             </div>
 
             <form id="obs_form">
-                <!-- Formulário de Criar o Obstáculo será inserido aqui -->
+                <label for="tam">Selecione o Tamanho do Obstáculo</label>
+                <label for="larg">Largura:</label>
+                <input type="range" id="larg" name="tam" min="0" max="50" value="25" required>
+                <label for="alt">Altura:</label>
+                <input type="range" id="alt" name="tam" min="0" max="50" value="25" required>
+                <label for="rotation">Selecione a Rotação do Obstáculo</label>
+                <input type="range" name="rotation" id="rotation" min="0" max="360" value="0" required>
+                <label for="formato">Selecione o Formato do Obstáculo</label>
+                <div id="formato" class="form-radio">
+                    <label for="circulo">Circulo:</label><input type="radio" id="circulo" name="formato" value="circulo">
+                    <label for="triangulo">Triângulo:</label><input type="radio" id="triangulo" name="formato" value="triangulo">
+                    <label for="quadri">Quadrilátero:</label><input type="radio" id="quadri" name="formato" value="quadri" checked>
+                </div>
+                <div class="preview-obs"></div>
                  <div class="form-actions">
                     <button type="button" id="o_cancel_btn">Cancelar</button>
                     <button type="submit" id="o_add_btn">Adicionar Obstáculo</button>
