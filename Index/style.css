@@ -9,6 +9,9 @@ body{
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.menu{
+    height: 22vh;
+}
 
 .content{
     justify-content: flex-start;
