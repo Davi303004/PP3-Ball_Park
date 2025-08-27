@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ball Battle</title>
+    <link rel="stylesheet" href="../global.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="../images/favicon_Battle.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
     <div class="menu">
         <div class="menu-item">
            <label>Apostas Certas</label>
-           <p id="score">0</p> 
+           <p id="score" class="visor">0</p> 
         </div>
         <div class="menu-item">
             <label>Adicionar Bolinha</label>
@@ -35,5 +36,38 @@
     <div class="content">
         <div class="arena"></div>
     </div>
+    <div id="ball_overlay" class="modal-overlay" role="presentation">
+        <div id="ball_modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-header">
+                <div id="ball_tittle" class="modal-tittle">Criando sua Bolinha</div>
+                <button id="b_close_btn" class="close-btn">&times;</button>
+            </div>
+
+            <form id="ball_form">
+                <!-- Formulário de Criar a Bolinha será inserido aqui -->
+                <div class="form-actions">
+                    <button type="button" id="b_cancel_btn">Cancelar</button>
+                    <button type="submit" id="b_add_btn">Adicionar Bolinha</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="obs_overlay" class="modal-overlay" role="presentation">
+        <div id="obs_modal" class="modal" role="dialog" aria-modal="true" aria-hidden="false">
+            <div class="modal-header">
+                <div id="obs_tittle" class="modal-tittle">Criando seu Obstáculo</div>
+                <button id="o_close_btn" class="close-btn">&times;</button>
+            </div>
+
+            <form id="obs_form">
+                <!-- Formulário de Criar o Obstáculo será inserido aqui -->
+                 <div class="form-actions">
+                    <button type="button" id="o_cancel_btn">Cancelar</button>
+                    <button type="submit" id="o_add_btn">Adicionar Obstáculo</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
